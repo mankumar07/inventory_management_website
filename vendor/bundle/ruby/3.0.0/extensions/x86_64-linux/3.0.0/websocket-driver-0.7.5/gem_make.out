@@ -1,0 +1,18 @@
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+/home/developer/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/developer/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-e7k8d sitelibdir\=./.gem.20230209-24832-e7k8d clean
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-e7k8d sitelibdir\=./.gem.20230209-24832-e7k8d
+compiling websocket_mask.c
+linking shared-object websocket_mask.so
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-e7k8d sitelibdir\=./.gem.20230209-24832-e7k8d install
+/usr/bin/install -m 0755 websocket_mask.so ./.gem.20230209-24832-e7k8d
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/websocket-driver-0.7.5/ext/websocket-driver
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-e7k8d sitelibdir\=./.gem.20230209-24832-e7k8d clean

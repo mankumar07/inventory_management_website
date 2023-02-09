@@ -1,0 +1,24 @@
+<h1>Edit Item</h1>
+
+<%= form_with model: @item,url: {action: "update"} do |form| %>
+  <div>
+    <%= form.label :name %><br>
+    <%= form.text_field :name %>
+    <% @item.errors.full_messages_for(:name).each do |message| %>
+    <div><%= message %></div>
+    <% end %>
+  </div>
+
+  <div>
+    <%= form.label :price %><br>
+    <%= form.number_field :price %>
+  </div>
+  <div>
+    <%= form.label :rating %><br>
+    <%= form.text_field :rating %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

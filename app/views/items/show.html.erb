@@ -1,0 +1,8 @@
+<h1>Are you sure? Want To Delete "<%= @item.name %>" </h1>
+<h6>Item Name => <%= @item.name %> </h6>
+<h6>Item Price => <%= @item.price %> </h6>
+<h6>Item Rating => <%= @item.rating %> </h6>
+<li><%= link_to "Destroy", inventory_item_path(@item), data: {
+                    turbo_method: :delete,
+                    turbo_confirm: "Are you sure?"
+                  } %></li>

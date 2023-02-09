@@ -1,0 +1,19 @@
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/debug-1.7.1/ext/debug
+/home/developer/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/developer/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-uft21m sitelibdir\=./.gem.20230209-24832-uft21m clean
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-uft21m sitelibdir\=./.gem.20230209-24832-uft21m
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-uft21m sitelibdir\=./.gem.20230209-24832-uft21m install
+/usr/bin/install -m 0755 debug.so ./.gem.20230209-24832-uft21m/debug
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/debug-1.7.1/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20230209-24832-uft21m sitelibdir\=./.gem.20230209-24832-uft21m clean
