@@ -56,6 +56,9 @@ group :development, :test do
   gem "letter_opener"
   gem 'rspec-rails', ">= 3.9.0"
   gem 'shoulda-matchers'
+  gem 'factory_bot_rails', '~> 6.1.0'
+  gem 'rails-controller-testing'
+  gem 'rubocop-rails', require: false
 end
 
 group :development do
@@ -75,3 +78,4 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+gem 'simplecov', require: false, group: :test

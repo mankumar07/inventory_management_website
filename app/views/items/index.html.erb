@@ -1,2 +1,27 @@
-<h1>Items#index</h1>
-<p>Find me in app/views/items/index.html.erb</p>
+<h1 class = "text-danger">Items</h1>
+<a href="#"><button type="button" class="btn btn-success">Create Item</button></a>
+<a href="#"><button type="button" class="btn btn-success">Export</button></a>
+<%= link_to "Export", inventory_items_path(format: 'csv')%>
+<table>
+	<tr>
+		<th>Item Id</th>
+		<th>Item name</th>
+		<th>Item price</th>
+		<th>Item rating</th>
+		<th>Update Item</th>
+		<th>Delete Item</th>
+    	<th>Button</th>
+	</tr>
+  <% @items.each do |item| %>
+	<tr>
+		<td><%= item.id %></td>
+		<td><%= item.name %></td>
+		<td><%= item.price %></td>
+		<td><%= item.rating %></td>
+		<td><a href="#" ><button type="button" class="btn btn-warning">Update</button></a></td>
+		<td><a href="#" ><button type="button" class="btn btn-danger">Delete</button></a></td>
+    <td><a href="#" ><button type="button" class="btn btn-success">Buy Now</button> </a></td>
+	
+	</tr>
+  <% end %>
+</table>

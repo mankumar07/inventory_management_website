@@ -1,0 +1,16 @@
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+/home/developer/.rvm/rubies/ruby-3.0.0/bin/ruby -I /home/developer/.rvm/rubies/ruby-3.0.0/lib/ruby/site_ruby/3.0.0 extconf.rb
+creating Makefile
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20230210-29754-zwqp0d sitelibdir\=./.gem.20230210-29754-zwqp0d clean
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20230210-29754-zwqp0d sitelibdir\=./.gem.20230210-29754-zwqp0d
+make: Nothing to be done for 'all'.
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20230210-29754-zwqp0d sitelibdir\=./.gem.20230210-29754-zwqp0d install
+
+current directory: /home/developer/ruby_projects/inventory_management_website/vendor/bundle/ruby/3.0.0/gems/json-2.6.3/ext/json
+make DESTDIR\= sitearchdir\=./.gem.20230210-29754-zwqp0d sitelibdir\=./.gem.20230210-29754-zwqp0d clean

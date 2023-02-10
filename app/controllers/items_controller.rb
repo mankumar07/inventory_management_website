@@ -1,6 +1,12 @@
 class ItemsController < ApplicationController
   def index
+    # byebug
     @items = Item.all
+
+    respond_to do |format|
+      format.html
+      format.csv { send_data @items.to_csv, filename: "items-#{Date.today}.csv" }
+    end
   end
 
   def show
