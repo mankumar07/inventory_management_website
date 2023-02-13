@@ -1,22 +1,23 @@
-class CrudNotificationMailer < ApplicationMailer
+# frozen_string_literal: true
 
+class CrudNotificationMailer < ApplicationMailer
   def create_notification(object)
     @object = object
     @object_count = object.class.count
 
-    mail to: "admin@example.com" , subject: "A new entry for #{object.class} has been created"
+    mail to: 'admin@example.com', subject: "A new entry for #{object.class} has been created"
   end
 
   def update_notification(object)
     @object = object
     # @object_count = object.class.count
 
-    mail to: "admin@example.com", subject: "Hello User your #{object.class} has been updated"
+    mail to: 'admin@example.com', subject: "Hello User your #{object.class} has been updated"
   end
 
   def delete_notification
-    @greeting = "Hi"
+    @greeting = 'Hi'
 
-    mail to: "to@example.org"
+    mail to: 'to@example.org'
   end
 end

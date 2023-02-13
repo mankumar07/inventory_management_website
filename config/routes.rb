@@ -1,6 +1,8 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   devise_for :users
-  # get 'invoices/index'
+  get 'invoices/index'
   # get 'invoices/show'
   # get 'invoices/new'
   # get 'invoices/create'

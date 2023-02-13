@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 FactoryBot.define do
   factory :item do
     name { 'something' }
@@ -5,4 +7,4 @@ FactoryBot.define do
     rating { 4 }
     inventory_id { 1 }
   end
-end 
+end
