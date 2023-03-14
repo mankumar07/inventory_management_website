@@ -1,6 +1,7 @@
-class InventorysController < ApplicationController
-  before_action :authenticate_user! , only: %i[index , show ]
+# frozen_string_literal: true
 
+class InventorysController < ApplicationController
+  # before_action :authenticate_user! , only: %i[index , show ]
 
   def index
     @inventorys = Inventory.all
@@ -11,9 +12,7 @@ class InventorysController < ApplicationController
     @items = @inventory.items
   end
 
-  def new
-  end
+  def new; end
 
-  def create
-  end
+  def create; end
 end

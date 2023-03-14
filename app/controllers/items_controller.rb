@@ -1,9 +1,18 @@
+# frozen_string_literal: true
+
 class ItemsController < ApplicationController
   def index
+    # byebug
     @items = Item.all
+
+    respond_to do |format|
+      format.html
+      format.csv { send_data @items.to_csv, filename: "items-#{Date.today}.csv" }
+    end
   end
 
   def show
+    # byebug
     @item = Item.find(params[:id])
   end
 
@@ -14,7 +23,6 @@ class ItemsController < ApplicationController
 
   def create
     inventory = Inventory.find(params[:inventory_id])
-    # byebug
     @item = inventory.items.new(item_params)
 
     if @item.save
@@ -48,8 +56,10 @@ class ItemsController < ApplicationController
 
     redirect_to root_path, status: :see_other
   end
+
   private
-    def item_params
-      params.require(:item).permit(:name, :price, :rating)
-    end
+
+  def item_params
+    params.require(:item).permit(:name, :price, :rating)
+  end
 end

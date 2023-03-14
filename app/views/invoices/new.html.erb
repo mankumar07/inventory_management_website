@@ -1,2 +1,17 @@
-<h1>Invoices#new</h1>
-<p>Find me in app/views/invoices/new.html.erb</p>
+<h1>New Invoice</h1>
+
+<%= form_with model: @invoice,url: {action: "create"} do |form| %>
+  <div>
+    <%= form.label :quantity %><br>
+    <%= form.text_field :quantity %>
+  </div>
+
+   <div>
+    <%= form.label :total_price %><br>
+    <%= form.text_field :total_price %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

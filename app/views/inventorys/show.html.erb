@@ -1,7 +1,9 @@
 
-<h1>Items</h1>
+<h1 class = "text-danger">Items</h1>
 <a href="/inventorys/<%= @inventory.id %>/items/new" ><button type="button" class="btn btn-success">Create Item</button></a>
- <table>
+<a href="/invoices/index"><button type="button" class="btn btn-success">Your Invoices</button></a>
+<%= link_to "Export", "/inventorys/:inventory_id/items"%>
+<table>
 	<tr>
 		<th>Item Id</th>
 		<th>Item name</th>
@@ -19,9 +21,8 @@
 		<td><%= item.rating %></td>
 		<td><a href="/inventorys/<%= @inventory.id %>/items/<%= item.id %>/edit" ><button type="button" class="btn btn-warning">Update</button></a></td>
 		<td><a href="/inventorys/<%= @inventory.id %>/items/<%= item.id %>" ><button type="button" class="btn btn-danger">Delete</button></a></td>
-    	<td><a href="#" ><button type="button" class="btn btn-success">Buy Now</button> </a></td>
+    <td><a href="/inventorys/<%= @inventory.id %>/items/<%= item.id %>/invoices/new" ><button type="button" class="btn btn-success">Buy Now</button> </a></td>
 	
 	</tr>
   <% end %>
 </table>
-
